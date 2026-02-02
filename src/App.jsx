@@ -10,13 +10,14 @@ import MapDemo2 from './components/MapDemo2';
 import MapDemo3 from './components/MapDemo3';
 import MapDemo4 from './components/MapDemo4';
 import { MapDemo5 } from './components/MapDemo5';
+import MapDemo6 from './components/MapDemo6';
 
 function App() {
 
   return (
     <div>
       <HeaderComponent></HeaderComponent>
-      <MapDemo5/>
+      <MapDemo6/>
       <FooterComponent></FooterComponent>
     </div>
   )
