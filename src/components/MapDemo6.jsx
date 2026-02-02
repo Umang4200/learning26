@@ -29,7 +29,7 @@ function MapDemo6() {
                         <td>{lang.id}</td>
                         <td>{lang.name}</td>
                         <td>{lang.author}</td>
-                        <td><img src={lang.image} width="30" /></td>
+                        <td><img src={lang.image} alt={lang.name} width="30" /></td>
                     </tr>
                 })
             }
