@@ -5,26 +5,31 @@ import viteLogo from '/vite.svg'
 import { HeaderComponent } from './components/HeaderComponent';
 import { FooterComponent } from './components/FooterComponent';
 import ContentComponent from './components/ContentComponent';
-import MapDemo1 from './components/MapDemo1';
-import MapDemo2 from './components/MapDemo2';
-import MapDemo3 from './components/MapDemo3';
-import MapDemo4 from './components/MapDemo4';
-import { MapDemo5 } from './components/MapDemo5';
-import MapDemo6 from './components/MapDemo6';
-import MapDemo7 from './components/MapDemo7';
-import MapDemo8 from './components/MapDemo8';
-import MapDemo9 from './components/MapDemo9';
 import MapDemo10 from './components/MapDemo10';
+import { Route, Routes } from 'react-router-dom';
+import NetflixHome from './components/NetflixHome';
+import NetflixMovies from './components/NetflixMovies';
+import NetflixShows from './components/NetflixShows';
+import Navbar from './components/Navbar';
+import NetflixSports from './components/NetflixSports';
+import NetflixSparks from './components/NetflixSparks';
+import HomeComponent from './components/HomeComponent';
 
 function App() {
 
   return (
     <div>
-      <HeaderComponent></HeaderComponent>
-      <MapDemo10/>
-      <FooterComponent></FooterComponent>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<HomeComponent/>}></Route>
+        <Route path="/netflixHome" element={<NetflixHome/>}></Route>
+        <Route path="/netflixMovies" element={<NetflixMovies/>}></Route>
+        <Route path="/netflixShows" element={<NetflixShows/>}></Route>
+        <Route path="/netflixSports" element={<NetflixSports/>}></Route>
+        <Route path="/netflixSparks" element={<NetflixSparks/>}></Route>
+      </Routes>
     </div>
   )
 }
 
-export default App
+export default App;
