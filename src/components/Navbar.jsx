@@ -46,6 +46,11 @@ export default function Navbar() {
                 Sparks
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/teams">
+                IPL Teams
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

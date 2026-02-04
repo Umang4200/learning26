@@ -5,7 +5,7 @@ import viteLogo from '/vite.svg'
 import { HeaderComponent } from './components/HeaderComponent';
 import { FooterComponent } from './components/FooterComponent';
 import ContentComponent from './components/ContentComponent';
-import MapDemo10 from './components/MapDemo10';
+import MapDemo10 from './components/tasks/MapDemo10';
 import { Route, Routes } from 'react-router-dom';
 import NetflixHome from './components/NetflixHome';
 import NetflixMovies from './components/NetflixMovies';
@@ -16,6 +16,8 @@ import NetflixSparks from './components/NetflixSparks';
 import HomeComponent from './components/HomeComponent';
 import ErrorPage from './components/ErrorPage';
 import Watch from './components/Watch';
+import Teams from './components/tasks/teams';
+import TeamDetail from './components/tasks/TeamDetail';
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
         <Route path="/netflixSports" element={<NetflixSports/>}></Route>
         <Route path="/netflixSparks" element={<NetflixSparks/>}></Route>
         <Route path="/watch/:name" element={<Watch/>}></Route>
+        <Route path="/teams" element={<Teams/>}></Route>
+        <Route path="/teamsdetails/:name" element={<TeamDetail/>}></Route>
         <Route path="/*" element={<ErrorPage/>}></Route>
       </Routes>
     </div>
