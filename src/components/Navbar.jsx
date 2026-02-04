@@ -4,9 +4,9 @@ export default function Navbar() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">
+        <Link class="navbar-brand" to="/">
           Netflix
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -22,7 +22,7 @@ export default function Navbar() {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-              <Link class="nav-link" to="/netflixHome">
+              <Link className="nav-link" to="/netflixHome">
                 Home
               </Link>
             </li>

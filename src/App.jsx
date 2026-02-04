@@ -14,6 +14,8 @@ import Navbar from './components/Navbar';
 import NetflixSports from './components/NetflixSports';
 import NetflixSparks from './components/NetflixSparks';
 import HomeComponent from './components/HomeComponent';
+import ErrorPage from './components/ErrorPage';
+import Watch from './components/Watch';
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
         <Route path="/netflixShows" element={<NetflixShows/>}></Route>
         <Route path="/netflixSports" element={<NetflixSports/>}></Route>
         <Route path="/netflixSparks" element={<NetflixSparks/>}></Route>
+        <Route path="/watch/:name" element={<Watch/>}></Route>
+        <Route path="/*" element={<ErrorPage/>}></Route>
       </Routes>
     </div>
   )
