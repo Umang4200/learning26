@@ -18,6 +18,10 @@ import ErrorPage from './components/ErrorPage';
 import Watch from './components/Watch';
 import Teams from './components/tasks/teams';
 import TeamDetail from './components/tasks/TeamDetail';
+import FunctionDemo from './components/FunctionDemo';
+import UsestateDemo1 from './components/UsestateDemo1';
+import UsestateDemo2 from './components/UsestateDemo2';
+import UsestateDemo3 from './components/UsestateDemo3';
 
 function App() {
 
@@ -34,6 +38,10 @@ function App() {
         <Route path="/watch/:name" element={<Watch/>}></Route>
         <Route path="/teams" element={<Teams/>}></Route>
         <Route path="/teamsdetails/:name" element={<TeamDetail/>}></Route>
+        <Route path="/fundemo" element={<FunctionDemo/>}></Route>
+        <Route path="/usestatedemo1" element={<UsestateDemo1/>}></Route>
+        <Route path="/usestatedemo2" element={<UsestateDemo2/>}></Route>
+        <Route path="/usestatedemo3" element={<UsestateDemo3/>}></Route>
         <Route path="/*" element={<ErrorPage/>}></Route>
       </Routes>
     </div>

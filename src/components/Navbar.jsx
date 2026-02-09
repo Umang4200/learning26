@@ -48,7 +48,27 @@ export default function Navbar() {
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/teams">
-                IPL Teams
+                IPLTeams
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/fundemo">
+                FunctionDemo
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/usestatedemo1">
+                useStateDemo1
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/usestatedemo2">
+                useStateDemo2
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/usestatedemo3">
+                useStateDemo3
               </Link>
             </li>
           </ul>
