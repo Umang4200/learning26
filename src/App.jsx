@@ -22,6 +22,7 @@ import FunctionDemo from './components/FunctionDemo';
 import UsestateDemo1 from './components/UsestateDemo1';
 import UsestateDemo2 from './components/UsestateDemo2';
 import UsestateDemo3 from './components/UsestateDemo3';
+import FormDemo1 from './components/FormDemo1';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/usestatedemo1" element={<UsestateDemo1/>}></Route>
         <Route path="/usestatedemo2" element={<UsestateDemo2/>}></Route>
         <Route path="/usestatedemo3" element={<UsestateDemo3/>}></Route>
+        <Route path="/formdemo1" element={<FormDemo1/>}></Route>
         <Route path="/*" element={<ErrorPage/>}></Route>
       </Routes>
     </div>
