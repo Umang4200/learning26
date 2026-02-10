@@ -8,7 +8,7 @@ export default function Teachers() {
         {id:103, name:"sandip", subject:"English"}
     ];
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
         <h1>Teachers Details</h1>
         <Table data={teachers}/>
     </div>

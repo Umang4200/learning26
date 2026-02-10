@@ -8,7 +8,7 @@ export default function Students() {
         {rollno:3, name:"Abc", age:22}
     ];
   return (
-    <div>
+    <div style={{textAlign:"center"}}>
         <h1>Students Details</h1>
         <Table data={students}/>
     </div>

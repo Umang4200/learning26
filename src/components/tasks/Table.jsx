@@ -5,7 +5,7 @@ export default function Table({ data }) {
 
   return (
     <div>
-      <table border={1}>
+      <table className="table">
         <thead>
           <tr>
             {keys.map((key) => (
@@ -14,12 +14,12 @@ export default function Table({ data }) {
           </tr>
         </thead>
         <tbody>
-          {data.map((obj, index) => (
-            <tr key={index}>
+          {data.map((obj) => (
+            <tr>
               {keys.map((key) => (
                 <td>{obj[key]}</td>
               ))}
-            </tr>
+            </tr> 
           ))}
         </tbody>
       </table>
