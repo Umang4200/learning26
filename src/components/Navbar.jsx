@@ -76,6 +76,11 @@ export default function Navbar() {
                 formdemo1
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/formdemo2">
+                formdemo2
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
