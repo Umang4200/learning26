@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function FormDemo1() {
+export default function InputDemo1() {
     const [name, setName] = useState("");
     function nameHandler(event){
         setName(event.target.value);
