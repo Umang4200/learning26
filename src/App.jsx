@@ -33,13 +33,14 @@ import FormDemo1 from "./components/forms/FormDemo1";
 import FormDemo2 from "./components/forms/FormDemo2";
 import FormDemo3 from "./components/forms/FormDemo3";
 import FormDemo4 from "./components/forms/FormDemo4";
+import FormValidationDemo1 from "./components/forms/FormValidationDemo1";
+import FormValidationDemo2 from "./components/forms/FormValidationDemo2";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomeComponent />}></Route>
         <Route path="/netflixHome" element={<NetflixHome />}></Route>
         <Route path="/netflixMovies" element={<NetflixMovies />}></Route>
         <Route path="/netflixShows" element={<NetflixShows />}></Route>
@@ -63,6 +64,9 @@ function App() {
         <Route path="/formdemo2" element={<FormDemo2 />}></Route>
         <Route path="/formdemo3" element={<FormDemo3/>}></Route>
         <Route path="/formdemo4" element={<FormDemo4/>}></Route>
+        <Route path="/formvalidationdemo1" element={<FormValidationDemo1/>}></Route>
+        <Route path="/formvalidationdemo2" element={<FormValidationDemo2/>}></Route>
+        <Route path="/" element={<HomeComponent />}></Route>
         <Route path="/*" element={<ErrorPage />}></Route>
       </Routes>
     </div>

@@ -21,7 +21,7 @@ export default function Navbar() {
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/netflixMovies">
                 Movies
               </Link>
@@ -47,8 +47,8 @@ export default function Navbar() {
             <li class="nav-item">
               <Link class="nav-link" to="/fundemo">
                 FunctionDemo
-              </Link>
-            </li>
+              </Link> 
+             </li> */}
             <li class="nav-item">
               <Link class="nav-link" to="/usestatedemo1">
                 useStateDemo1
@@ -100,20 +100,24 @@ export default function Navbar() {
               <Link class="nav-link" to="/formdemo1">
                 FormDemo1
               </Link>
-            </li>
-            <li class="nav-item">
               <Link class="nav-link" to="/formdemo2">
                 FormDemo2
               </Link>
             </li>
-                     <li class="nav-item">
+            <li class="nav-item">
               <Link class="nav-link" to="/formdemo3">
                 FormDemo3
               </Link>
-            </li>
-                     <li class="nav-item">
               <Link class="nav-link" to="/formdemo4">
                 FormDemo4
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/formvalidationdemo1">
+                formvalidationdemo1
+              </Link>
+              <Link class="nav-link" to="/formvalidationdemo2">
+                formvalidationdemo2
               </Link>
             </li>
           </ul>
