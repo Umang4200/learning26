@@ -38,6 +38,7 @@ import FormValidationDemo2 from "./components/forms/FormValidationDemo2";
 import PasswordValidationDemo from "./components/forms/PasswordValidationDemo";
 import ComparePassword from "./components/forms/ComparePassword";
 import ApiDemo1 from "./components/Apis/ApiDemo1";
+import ApiDemo2 from "./components/Apis/ApiDemo2";
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
         <Route path="/passvalidation" element={<PasswordValidationDemo/>}></Route>
         <Route path="/comparepassword" element={<ComparePassword/>}></Route>
         <Route path="/apidemo1" element={<ApiDemo1/>}></Route>
+        <Route path="/apidemo2" element={<ApiDemo2/>}></Route>
         <Route path="/" element={<HomeComponent />}></Route>
         <Route path="/*" element={<ErrorPage />}></Route>
       </Routes>

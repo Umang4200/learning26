@@ -4,9 +4,6 @@ export default function Navbar() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <Link class="navbar-brand" to="/">
-          Tasks
-        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -49,7 +46,7 @@ export default function Navbar() {
                 FunctionDemo
               </Link> 
              </li> */}
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/usestatedemo1">
                 useStateDemo1
               </Link>
@@ -62,7 +59,7 @@ export default function Navbar() {
               <Link class="nav-link" to="/usestatedemo3">
                 useStateDemo3
               </Link>
-            </li>
+            </li> */}
             <li class="nav-item">
               <Link class="nav-link" to="/employees">
                 Employees
@@ -133,6 +130,11 @@ export default function Navbar() {
             <li class="nav-item">
               <Link class="nav-link" to="/apidemo1">
                 ApiDemo1
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/apidemo2">
+                ApiDemo2
               </Link>
             </li>
           </ul>
