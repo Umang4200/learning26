@@ -2,13 +2,15 @@ import axios from 'axios'
 import React, { useState } from 'react'
 
 export default function ApiDemo1() {
-
+    const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");
     const [usersData, setUsersData] = useState([]);
 
     const keys = usersData.length > 0 ? Object.keys(usersData[0]) : [];
 
     async function getData() {
+        try{
+            setLoading(true);
         let response = await axios.get("https://node5.onrender.com/user/user/");
         console.log(response);
         console.log(response.data);
@@ -17,11 +19,15 @@ export default function ApiDemo1() {
         console.log(response.data.data[0].name);
         setMessage(response.data.message);
         setUsersData(response.data.data);
+        }finally{
+            setLoading(false);
+        }
     }
     return (
         <div style={{ textAlign: "center" }}>
             <h1>ApiDemo1</h1>
             <button onClick={() => { getData() }}>GetData</button>
+            {loading && <h2>Loading...</h2>}
             <h3>{message}</h3>
             <table className='table '>
                 <thead>
