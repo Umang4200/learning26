@@ -125,6 +125,16 @@ export default function Navbar() {
                 passvalidation
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/comparepassword">
+                comparepassword
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/apidemo1">
+                ApiDemo1
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
