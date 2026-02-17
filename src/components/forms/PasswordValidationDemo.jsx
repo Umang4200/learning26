@@ -51,26 +51,26 @@ export default function PasswordValidationDemo() {
             type="password"
             {...register("password", validationSchema.PasswordValidator)}
           />
-            {errors.password?.message}
-         
+          {errors.password?.message}
 
-          <p style={{ color: getColor( hasUpperCase) }}>
+
+          <p style={{ color: getColor(hasUpperCase) }}>
             At least 1 Character in Uppercase
           </p>
 
-          <p style={{ color: getColor( hasLowerCase) }}>
+          <p style={{ color: getColor(hasLowerCase) }}>
             At least 1 Character in Lowercase
           </p>
 
-          <p style={{ color: getColor( hasNumber) }}>
+          <p style={{ color: getColor(hasNumber) }}>
             At least 1 Number
           </p>
 
-          <p style={{ color: getColor( hasSpecialChar) }}>
+          <p style={{ color: getColor(hasSpecialChar) }}>
             At least 1 Special Character
           </p>
 
-          <p style={{ color: getColor( hasMinLength) }}>
+          <p style={{ color: getColor(hasMinLength) }}>
             Minimum 8 Characters Required
           </p>
         </div>
