@@ -141,7 +141,12 @@ export default function Navbar() {
               <Link class="nav-link" to="/apidemo3">
                 ApiDemo3
               </Link>
-            </li> 
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/omdbapi">
+                OmdbApi
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
