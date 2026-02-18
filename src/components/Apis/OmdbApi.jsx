@@ -6,10 +6,19 @@ export default function OmdbApi() {
 
     const [movies, setMovies] = useState([]);
     const [movieName, setMovieName] = useState("");
+    const [loading, setLoading] = useState(false);
 
     async function getMovies() {
-        let res = await axios.get(`https://www.omdbapi.com/?apikey=73cf620b&s=${movieName}`);
+try{
+    setLoading(true);
+            let res = await axios.get(`https://www.omdbapi.com/?apikey=73cf620b&s=${movieName}`);
         setMovies(res.data.Search);
+}catch(err){
+    console.log(err);
+
+}finally{
+    setLoading(false);
+}
     }
 
     return (
@@ -18,6 +27,7 @@ export default function OmdbApi() {
             <label htmlFor="">Enter Movie Name </label>&nbsp;
             <input type="text" onChange={(event)=>{setMovieName(event.target.value)}}/>&nbsp;
             <button onClick={getMovies}>Get Movies </button>
+            {loading && <h2>Loading...</h2>}
             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px" }}>
                 {
                     movies.map((movie) => {

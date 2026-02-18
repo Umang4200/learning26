@@ -6,27 +6,36 @@ export default function MovieDetail() {
 
     const { imdbID } = useParams();
     const [movieDetail, setMovieDetail] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     async function getMovieDetail() {
-        let response = await axios.get(`https://www.omdbapi.com/?apikey=73cf620b&i=${imdbID}`);
-        setMovieDetail(response.data);
+        try {
+            setLoading(true);
+            let response = await axios.get(`https://www.omdbapi.com/?apikey=73cf620b&i=${imdbID}`);
+            setMovieDetail(response.data);
+        } catch (err) {
+            console.log(err);
+        } finally {
+            setLoading(false);
+        }
     }
 
     return (
-        <div style={{ textAlign: "center"}}>
+        <div style={{ textAlign: "center" }}>
 
             <h2>Movie Detail</h2>
-            <button onClick={getMovieDetail}>Get Movie Detail</button>
-
+            <button onClick={() => { getMovieDetail() }}>Get Movie Detail</button>
+            {loading && <h2>Loading...</h2>}
             {movieDetail && (
                 <div style={{
                     width: "800px",
                     display: "flex",
                     gap: "30px",
                     padding: "20px",
-                    margin: "0 auto"}}>
+                    margin: "0 auto"
+                }}>
 
-                    <img src={movieDetail.Poster} style={{width: "300px",height: "450px",}}/>
+                    <img src={movieDetail.Poster} style={{ width: "300px", height: "450px", }} />
                     <div>
                         <h3>{movieDetail.Title}</h3>
                         <p><b>Year:</b> {movieDetail.Year}</p>
