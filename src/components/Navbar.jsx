@@ -60,7 +60,7 @@ export default function Navbar() {
                 useStateDemo3
               </Link>
             </li> */}
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <Link class="nav-link" to="/employees">
                 Employees
               </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
               <Link class="nav-link" to="/inputdemo3">
                 inputdemo3
               </Link>
-            </li>
+            </li> */}
             <li class="nav-item">
               <Link class="nav-link" to="/dropdown">
                 Dropdown
@@ -145,6 +145,16 @@ export default function Navbar() {
             <li class="nav-item">
               <Link class="nav-link" to="/omdbapi">
                 OmdbApi
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/postapidemo1">
+                PostApiDemo1
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/postapidemo2">
+                PostApiDemo2
               </Link>
             </li>
           </ul>
